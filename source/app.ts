@@ -8,7 +8,7 @@ dotenv.config();
 
 app.use(express.json());
 
-const mongoURI = process.env.mongoURI || "";
+const mongoURI = process.env.MONGO_URI || "";
 
 const recordSchema = new mongoose.Schema({
 	title: String,
